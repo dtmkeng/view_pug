@@ -1,13 +1,13 @@
 const router = require('express').Router()
 // const Event = require('../models/event')
 
-router.get('/',  (req, res) => {
+
+router.get('/', (req, res) => {
     res.render('event/p1-scan_name')
-})
-router.get('/p1',  (req, res) => {
-    res.render('event/p1-scan_name')
+    console.log(req.query.name)
 })
 router.get('/p2',  (req, res) => {
+    
     res.render('event/p2-part_name')
 })
 router.get('/p3',  (req, res) => {
